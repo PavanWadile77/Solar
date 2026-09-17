@@ -102,7 +102,7 @@ export const Hero = () => {
             animation: 'float 6s ease-in-out infinite'
           }}>
             <img 
-              src="/hero-artwork.jpg" 
+              src={`${import.meta.env.BASE_URL}hero-artwork.jpg`}
               alt="Artistic rendering of the solar system"
               style={{
                 width: '100%',
