@@ -1,6 +1,24 @@
-// Hero section component
+import { useState } from 'react';
 
+// Hero section component
 export const Hero = () => {
+  const primaryArtwork = `${import.meta.env.BASE_URL}hero-artwork.jpg`;
+  const [imgSrc, setImgSrc] = useState(primaryArtwork);
+  const [fallbackAttempt, setFallbackAttempt] = useState(0);
+
+  const handleImageError = () => {
+    if (fallbackAttempt === 0) {
+      setFallbackAttempt(1);
+      setImgSrc('./hero-artwork.jpg');
+    } else if (fallbackAttempt === 1) {
+      setFallbackAttempt(2);
+      setImgSrc(`${import.meta.env.BASE_URL}hero-fallback.svg`);
+    } else if (fallbackAttempt === 2) {
+      setFallbackAttempt(3);
+      setImgSrc('./hero-fallback.svg');
+    }
+  };
+
   return (
     <section style={{
       minHeight: '100vh',
@@ -88,7 +106,7 @@ export const Hero = () => {
           alignItems: 'center',
           position: 'relative'
         }}>
-          {/* We'll use the generated image as a background element with some CSS masking/border-radius to make it look like a window */}
+          {/* Circular window with floating animation, border, and glow */}
           <div style={{
             width: '100%',
             maxWidth: '600px',
@@ -99,15 +117,18 @@ export const Hero = () => {
             border: '8px solid white',
             position: 'relative',
             transform: 'translateX(5%)', // Cropped slightly at the right edge
-            animation: 'float 6s ease-in-out infinite'
+            animation: 'float 6s ease-in-out infinite',
+            background: 'radial-gradient(circle at 35% 35%, #181135 0%, #080614 70%)'
           }}>
             <img 
-              src={`${import.meta.env.BASE_URL}hero-artwork.jpg`}
+              src={imgSrc}
+              onError={handleImageError}
               alt="Artistic rendering of the solar system"
               style={{
                 width: '100%',
                 height: '100%',
-                objectFit: 'cover'
+                objectFit: 'cover',
+                display: 'block'
               }}
             />
           </div>

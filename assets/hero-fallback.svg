@@ -1,0 +1,132 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="600" height="600">
+  <defs>
+    <radialGradient id="space-bg" cx="50%" cy="50%" r="75%">
+      <stop offset="0%" stop-color="#0e0a26" />
+      <stop offset="40%" stop-color="#080617" />
+      <stop offset="100%" stop-color="#020108" />
+    </radialGradient>
+    <radialGradient id="sun-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fff5cc" />
+      <stop offset="25%" stop-color="#ffcc00" />
+      <stop offset="60%" stop-color="#ff7700" />
+      <stop offset="100%" stop-color="rgba(255,80,0,0)" />
+    </radialGradient>
+    <radialGradient id="earth-glow" cx="35%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#4aa3ff" />
+      <stop offset="30%" stop-color="#1a62d6" />
+      <stop offset="70%" stop-color="#0c2f82" />
+      <stop offset="100%" stop-color="#040f33" />
+    </radialGradient>
+    <radialGradient id="saturn-glow" cx="40%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#fcedc7" />
+      <stop offset="40%" stop-color="#dfc492" />
+      <stop offset="80%" stop-color="#a48450" />
+      <stop offset="100%" stop-color="#604928" />
+    </radialGradient>
+    <radialGradient id="mars-glow" cx="35%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#f87c56" />
+      <stop offset="40%" stop-color="#d34e29" />
+      <stop offset="80%" stop-color="#88280f" />
+      <stop offset="100%" stop-color="#421105" />
+    </radialGradient>
+    <radialGradient id="jupiter-glow" cx="35%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#f5e2cb" />
+      <stop offset="30%" stop-color="#cda37b" />
+      <stop offset="60%" stop-color="#a56a42" />
+      <stop offset="100%" stop-color="#4d2c16" />
+    </radialGradient>
+    <linearGradient id="saturn-ring" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="rgba(230, 205, 160, 0.9)" />
+      <stop offset="45%" stop-color="rgba(200, 175, 130, 0.85)" />
+      <stop offset="50%" stop-color="rgba(10, 10, 20, 0.1)" />
+      <stop offset="55%" stop-color="rgba(215, 190, 145, 0.75)" />
+      <stop offset="100%" stop-color="rgba(170, 145, 105, 0.4)" />
+    </linearGradient>
+    <radialGradient id="nebula-purple" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="rgba(120, 56, 232, 0.28)" />
+      <stop offset="60%" stop-color="rgba(78, 85, 216, 0.12)" />
+      <stop offset="100%" stop-color="transparent" />
+    </radialGradient>
+  </defs>
+
+  <!-- Deep Space Background -->
+  <rect width="600" height="600" fill="url(#space-bg)" />
+  <circle cx="300" cy="300" r="280" fill="url(#nebula-purple)" />
+
+  <!-- Background Stars -->
+  <g fill="#ffffff" opacity="0.8">
+    <circle cx="85" cy="120" r="1.5" />
+    <circle cx="150" cy="80" r="1" />
+    <circle cx="240" cy="60" r="1.8" />
+    <circle cx="340" cy="110" r="1.2" />
+    <circle cx="460" cy="90" r="2" />
+    <circle cx="520" cy="160" r="1" />
+    <circle cx="110" cy="220" r="1.2" />
+    <circle cx="70" cy="340" r="1.6" />
+    <circle cx="130" cy="450" r="1.4" />
+    <circle cx="210" cy="530" r="1" />
+    <circle cx="480" cy="490" r="1.5" />
+    <circle cx="530" cy="380" r="1.8" />
+    <circle cx="460" cy="280" r="1.2" />
+    <circle cx="380" cy="520" r="1.5" />
+  </g>
+
+  <!-- Orbital Trajectory Rings -->
+  <ellipse cx="300" cy="300" rx="90" ry="45" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="1.2" stroke-dasharray="3,3" />
+  <ellipse cx="300" cy="300" rx="150" ry="75" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="1.2" />
+  <ellipse cx="300" cy="300" rx="210" ry="105" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="1.2" />
+  <ellipse cx="300" cy="300" rx="265" ry="135" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="1.2" stroke-dasharray="4,4" />
+
+  <!-- Radiant Central Sun -->
+  <circle cx="300" cy="300" r="75" fill="url(#sun-glow)" opacity="0.6" />
+  <circle cx="300" cy="300" r="42" fill="url(#sun-glow)" />
+  <circle cx="300" cy="300" r="30" fill="#fff7d6" />
+
+  <!-- Mercury -->
+  <circle cx="230" cy="280" r="6" fill="#a4a09c" />
+
+  <!-- Venus -->
+  <circle cx="205" cy="245" r="11" fill="#e5ce9e" />
+
+  <!-- Earth & Moon -->
+  <g transform="translate(180, 360)">
+    <!-- Atmosphere Rim -->
+    <circle cx="0" cy="0" r="26" fill="rgba(80, 160, 255, 0.35)" />
+    <!-- Earth Globe -->
+    <circle cx="0" cy="0" r="22" fill="url(#earth-glow)" />
+    <!-- Continents green/brown overlay -->
+    <path d="M -8,-6 Q -2,-12 4,-8 Q 10,-4 8,4 Q 4,10 -4,8 Z" fill="#387a32" opacity="0.75" />
+    <path d="M 2,6 Q 8,4 12,10 Q 8,16 0,14 Z" fill="#4d8c42" opacity="0.7" />
+    <!-- Cloud Swirls -->
+    <path d="M -16,-2 Q -6,4 4,-2 Q 14,-8 18,0" fill="none" stroke="#ffffff" stroke-width="2.5" opacity="0.7" stroke-linecap="round" />
+    <!-- Moon -->
+    <circle cx="32" cy="-14" r="4.5" fill="#cfcfce" />
+  </g>
+
+  <!-- Mars -->
+  <circle cx="410" cy="235" r="9" fill="url(#mars-glow)" />
+
+  <!-- Jupiter -->
+  <g transform="translate(470, 340)">
+    <circle cx="0" cy="0" r="34" fill="url(#jupiter-glow)" />
+    <!-- Cloud Belts -->
+    <ellipse cx="0" cy="-10" rx="33" ry="5" fill="#8c4e28" opacity="0.5" />
+    <ellipse cx="0" cy="4" rx="33" ry="6" fill="#9c5b30" opacity="0.55" />
+    <!-- Great Red Spot -->
+    <ellipse cx="14" cy="10" rx="7" ry="4.5" fill="#b83616" />
+  </g>
+
+  <!-- Saturn & Rings -->
+  <g transform="translate(130, 180) rotate(-22)">
+    <!-- Back of Ring -->
+    <ellipse cx="0" cy="0" rx="46" ry="14" fill="none" stroke="url(#saturn-ring)" stroke-width="12" stroke-dasharray="75, 100" stroke-dashoffset="40" opacity="0.7" />
+    <!-- Saturn Body -->
+    <circle cx="0" cy="0" r="24" fill="url(#saturn-glow)" />
+    <!-- Front of Ring -->
+    <ellipse cx="0" cy="0" rx="46" ry="14" fill="none" stroke="url(#saturn-ring)" stroke-width="12" />
+  </g>
+
+  <!-- Outer Window Frame Border -->
+  <circle cx="300" cy="300" r="292" fill="none" stroke="rgba(255,255,255,0.85)" stroke-width="8" />
+  <circle cx="300" cy="300" r="284" fill="none" stroke="rgba(120, 56, 232, 0.4)" stroke-width="3" />
+</svg>
