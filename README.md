@@ -1,31 +1,19 @@
-# Explore the Solar System ☀️
+# Explore the Solar System ☀️🪐
 
-An interactive **3D Solar System experience** built with React, TypeScript, Vite, and Three.js.
+An interactive **3D Solar System experience** combining education, visual exploration, and modern WebGL-based interfaces.
 
-## 🌌 Overview
-
-This project presents an educational and interactive way to explore planets and other solar-system content through a browser-based 3D experience.
-
-## ✨ Features
-
+## 🌌 Features
 - Interactive 3D solar-system visualization
 - Planet exploration
-- Smooth camera and scene interactions
+- Camera and scene interactions
 - Educational presentation
 - Responsive web experience
-- Custom visual assets and fallback artwork
+- Custom visual assets
 
-## 🛠 Tech Stack
-
-- React 18
-- TypeScript
-- Vite
-- Three.js
-- React Three / Three.js ecosystem
-- Lucide React
+## 🛠️ Tech Stack
+**React 18 · TypeScript · Vite · Three.js · React Three ecosystem · Lucide React**
 
 ## ▶️ Run Locally
-
 ```bash
 git clone https://github.com/PavanWadile77/Solar.git
 cd Solar
@@ -33,25 +21,19 @@ npm install
 npm run dev
 ```
 
-Production build:
-
+Production:
 ```bash
 npm run build
 npm run preview
 ```
 
 ## 🌐 Deployment
+Structured for static hosting and GitHub Pages-style deployment.
 
-The project includes GitHub Pages-related files and can be deployed as a static Vite application.
+## 🔗 Project
+[GitHub Repository](https://github.com/PavanWadile77/Solar)
 
-## 📁 Repository
-
-https://github.com/PavanWadile77/Solar
-
-## Author
-
+## 👨‍💻 Author
 **Pavan Wadile**
 
----
-
-An educational project focused on interactive web graphics and astronomy.
+> A learning project focused on interactive 3D web development and astronomy.
