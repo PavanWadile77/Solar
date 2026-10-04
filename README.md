@@ -1,5 +1,14 @@
 # Explore the Solar System ☀️🪐
 
+<div align="center">
+
+**Interactive 3D Web • WebGL**
+
+<img src="https://img.shields.io/badge/Three.js-000000?style=for-the-badge&logo=threedotjs&logoColor=white">
+
+</div>
+
+
 An interactive **3D Solar System experience** combining education, visual exploration, and modern WebGL-based interfaces.
 
 ## 🌌 Features
@@ -37,3 +46,18 @@ Structured for static hosting and GitHub Pages-style deployment.
 **Pavan Wadile**
 
 > A learning project focused on interactive 3D web development and astronomy.
+
+## 🔧 Engineering Focus
+
+Interactive 3D visualization, scene interaction and educational astronomy.
+
+
+---
+
+<div align="center">
+
+**Pavan Wadile · B.Tech Information Technology**
+
+[GitHub](https://github.com/PavanWadile77)
+
+</div>
